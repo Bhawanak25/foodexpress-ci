@@ -1,5 +1,5 @@
 def cart_total(items):  
-    total = 0   
+    total = 0   # feature version
     for item in items:      
         total = total + item["price"] * item["qty"]  
     return total
