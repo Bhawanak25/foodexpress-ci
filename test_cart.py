@@ -6,3 +6,9 @@ def test_apply_discount():
     assert apply_discount(200, 10) == 180 
 def test_zero_discount():   
     assert apply_discount(100, 0) == 100
+def test_multiple_items():
+    items = [
+        {"price": 100, "qty": 2},
+        {"price": 50, "qty": 2}
+    ]
+    assert cart_total(items) == 300
