@@ -12,3 +12,6 @@ def test_multiple_items():
         {"price": 50, "qty": 2}
     ]
     assert cart_total(items) == 300
+def test_single_item():
+    items = [{"price": 100, "qty": 1}]
+    assert cart_total(items) == 100
